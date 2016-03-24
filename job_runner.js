@@ -11,14 +11,12 @@ var JobRunner = function(db){
 
 JobRunner.MAX_JOBS = 10;
 
-
 JobRunner.prototype.startJobs = function(){
   var self = this;
   setInterval(function(){
     self.runJobs();
   }, self.intervalTimeMs);
 }
-
 
 JobRunner.prototype.runJobs = function(){
   var self = this;
