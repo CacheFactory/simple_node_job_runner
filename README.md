@@ -1,6 +1,11 @@
-== A Simple Node Job Runner
+# A Simple Node Job Runner
 
-routes:
+### routes:
 
-get /:id 
-post / (url: http://google.com)
+* get /:id 
+* post / (body -> url: http://google.com)
+
+ ### tests
+```
+  mocha
+```
